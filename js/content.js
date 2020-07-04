@@ -34,6 +34,15 @@ function handleText(textNode) {
 }
 
 function replaceText(v) {
+  //Ben Shapiro + Verb/on
+  v = v.replace(/\bShapiro on\b/g, "Shortprio defecates all over himself while discussing");
+  v = v.replace(/\bShapiro On\b/g, "Shortprio defecates all over himself while discussing");
+  v = v.replace(/\bShapiro DESTROYS\b/g, "Shortprio SPEAKS VERY QUICKLY ABOUT");
+  v = v.replace(/\bShapiro destroys\b/g, "Shortprio speaks very quickly about");
+  v = v.replace(/\bShapiro Destroys\b/g, "Shortprio Speaks Very Quickly About");
+  v = v.replace(/\bShapiro blasts\b/g, "Shortprio spews utter nonsense about");
+  v = v.replace(/\bShapiro Blasts\b/g, "Shortprio Spews utter nonsense about");
+
   v = v.replace(/\bBenjamin Aaron Shapiro\b/g, "Small Daddy Shortpiro");
   v = v.replace(/\bbenshapiro\b/g, "benshortpiro");
   v = v.replace(/\bShapiro\b/g, "Shortpiro");
@@ -58,6 +67,7 @@ function replaceText(v) {
 
   //The 'Right' Side of History
   v = v.replace(/\bThe Right Side of History\b/g, "The Wrong Side of History");
+
 
   return v;
 }
